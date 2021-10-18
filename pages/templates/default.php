@@ -12,7 +12,7 @@
   </head>
   <body>
       <nav class="navbar navbar-dark bg-dark">
-        <div class="text-light ms-2 me-2">Mon Blog</div>
+        <div class="text-light ms-2 me-2"><a href="index.php?p=home">Mon Blog</a></div>
       </nav>
       <div class="container">
         <div class="starter-template mt-2" >

@@ -1,3 +1,11 @@
-<h1>Je suis le home page</h1>
+<?php
 
-<p><a href="index.php?p=single">Single</a></p>
+foreach(\App\Table\Article::getLast() as $post):
+
+?>
+<h2><a href="<?= $post->url; ?>"><?= $post->titre ?></a></h2>
+
+<p><?= $post->getExtrait(); ?></p>
+<?php
+endforeach;
+?>

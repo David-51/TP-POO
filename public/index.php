@@ -8,14 +8,18 @@ if(isset($_GET['p'])){
 else{
     $p = 'home';
 }
+// Initilisation des objets
+App\App::getDb();
+
 
 ob_start();
 if($p === 'home'){
     require '../pages/home.php';
 }
-elseif($p === 'single'){
+elseif($p === 'article'){
     require '../pages/single.php';
 }
 $content = ob_get_clean();
+
 require '../pages/templates/default.php';
 ?>
